@@ -1,0 +1,72 @@
+Project #1: AI Support Agent for Small Businesses (Zendesk-lite)
+
+Why first:
+
+High recruiter signal: full-stack + AI + product thinking + API integration.
+
+Shows you can build usable SaaS products.
+
+Plays to your strengths: Next.js, design, OpenAI, automation.
+
+Can be deployed fast with a working demo for GitHub.
+
+Tech Stack
+
+Frontend:
+
+Next.js (framework)
+
+TailwindCSS (UI)
+
+Optional: Headless UI / Radix for components
+
+Backend / API Layer:
+
+Node.js / Next.js API routes
+
+SQLite + Prisma (optional for persistent storage, e.g., chat logs, FAQ indexing)
+
+OpenAI API (for Q&A)
+
+Vector DB: Use SQLite with embeddings or Weaviate / Milvus if ambitious
+
+Other Integrations:
+
+Optional: Stripe API (for future SaaS pricing)
+
+Email API (SendGrid / SMTP) for notifications
+
+Deployment:
+
+Vercel (Next.js native, free for small demos)
+
+GitHub Actions for CI/CD if you want to show automation
+
+Project Structure (suggested)
+
+ai-support-agent/
+├── frontend/
+│   ├── pages/
+│   ├── components/
+│   └── styles/
+├── backend/
+│   ├── api/
+│   │   └── openaiHandler.ts
+│   ├── db/
+│   │   └── prisma/
+│   └── vectorStore/
+├── README.md
+├── package.json
+└── .env.example
+
+Core Features (MVP)
+
+Upload FAQs (Markdown / CSV) → indexed embeddings
+
+Users can ask questions → AI responds using RAG
+
+Simple chat interface + dashboard to manage FAQs
+
+API-ready endpoints (so recruiters can see “real SaaS thinking”)
+
+Optional: Demo GIF + README showing architecture diagram
